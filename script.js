@@ -1,6 +1,10 @@
 const load_btn = document.getElementById('load-button');
 const btn_txt = document.getElementById('button-text');
 
+function ready() {
+    load_btn.disabled = false;
+}
+
 function btn_click() {
     load_btn.classList.add('button-loading');
     load_btn.disabled = true;
